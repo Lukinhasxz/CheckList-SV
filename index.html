@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="CheckList mostrada aos clientes, mostrando categoria, serviços sugeridos, e confirmação." content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>CheckList Clientes</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: lato, sans-serif;
+        font-weight: bold;
+    }
+    body {
+        background: linear-gradient(150deg, black, gray);
+    }
+    .CheckList {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        margin: 50px;
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        border-left: white solid 5px;
+        color: white;
+        align-items: center;
+        padding: 10px;
+        background: linear-gradient(135deg, black, gray);
+        border-right: #25D366 solid 5px;
+    }
+    .item span:last-child {
+      font-size: 25px;
+      color: #0f0;
+      margin-left: 10px;
+      padding: 10px;
+    }
+    .item span {
+        padding: 10px;
+        text-transform: capitalize;
+    }
+    .item:hover {
+        transform: translateY(4px);
+        transition: all 0.6s ease;
+    }
+    h1 {
+        text-align: center;
+        margin: 30px;
+        color: white;
+    }
+    @media (max-width:480px){
+        .item {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <h1>CheckList-Serviços</h1>
+    <div class="CheckList">
+        <div class="item"><span>Layout bonito e limpo</span><span>✅</span></div>
+        <div class="item"><span>Site responsivo (funciona bem no celular)</span><span>✅</span></div>
+        <div class="item"><span>Título chamativo e texto objetivo</span><span>✅</span></div>
+        <div class="item"><span>Botões visíveis e com ação clara</span><span>✅</span></div>
+        <div class="item"><span>Pequenas animações (scroll, hover…)</span><span>✅</span></div>
+        <div class="item"><span>SEO básico</span><span>✅</span></div>
+        <div class="item"><span>Formulário funcional (ou simulado)</span><span>✅</span></div>
+        <div class="item"><span>Hospedado e acessível online</span><span>✅</span></div>
+    </div>
+</body>
+</html>
